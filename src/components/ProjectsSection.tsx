@@ -9,6 +9,7 @@ const projects = [
     impact: "Improves diagnostic accuracy and model interpretability in healthcare.",
     tech: ["Python", "PyTorch", "ResNet", "Grad-CAM++"],
     featured: false,
+    githubUrl: "https://github.com/Akshat270302/OsteoDetect.git",
   },
   {
     title: "Salon Booking Mobile Application",
@@ -17,6 +18,7 @@ const projects = [
     impact: "Improves booking efficiency and user experience at scale.",
     tech: ["Flutter", "Dart", "MySQL/MongoDB", "REST APIs"],
     featured: true,
+    liveDemoUrl: "https://salon-booking-app-preview.vercel.app?_vercel_share=JHz3eUOsYLIqzwJY4cdlyDljn0MhGUO4",
   },
 ];
 
@@ -56,12 +58,26 @@ const ProjectsSection = () => {
                 ))}
               </div>
               <div className="flex gap-3">
-                <a href="#" className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors">
-                  <Github className="h-3.5 w-3.5" /> View Code
-                </a>
-                <a href="#" className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors">
-                  <ExternalLink className="h-3.5 w-3.5" /> Live Demo
-                </a>
+                {project.githubUrl && (
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <Github className="h-3.5 w-3.5" /> View Code
+                  </a>
+                )}
+                {project.liveDemoUrl && (
+                  <a
+                    href={project.liveDemoUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    <ExternalLink className="h-3.5 w-3.5" /> Live Demo
+                  </a>
+                )}
               </div>
             </div>
           ))}

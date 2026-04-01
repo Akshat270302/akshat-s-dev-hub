@@ -41,18 +41,18 @@ const HeroSection = () => {
             <ArrowDown className="h-4 w-4" />
             View Projects
           </a>
-          <a href="#" className="btn-outline-glow">
+          <a href="/Resume_Akshat_Neema.pdf" download="Resume_Akshat_Neema.pdf" className="btn-outline-glow">
             <Download className="h-4 w-4" />
             Download Resume
           </a>
         </div>
 
         <div className="flex gap-4 justify-center opacity-0 animate-fade-in" style={{ animationDelay: "0.5s" }}>
-          <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer"
+          <a href="https://github.com/Akshat270302" target="_blank" rel="noopener noreferrer"
             className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary/60 transition-all duration-200">
             <Github className="h-5 w-5" />
           </a>
-          <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.linkedin.com/in/akshat-neema-0763552b5/" target="_blank" rel="noopener noreferrer"
             className="p-2 rounded-lg text-muted-foreground hover:text-primary hover:bg-secondary/60 transition-all duration-200">
             <Linkedin className="h-5 w-5" />
           </a>

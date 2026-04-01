@@ -2,9 +2,9 @@ import { useReveal } from "@/hooks/use-reveal";
 import { Mail, Github, Linkedin } from "lucide-react";
 
 const links = [
-  { icon: Mail, label: "Email", href: "mailto:your@email.com", text: "your@email.com" },
-  { icon: Github, label: "GitHub", href: "https://github.com/yourusername", text: "github.com/yourusername" },
-  { icon: Linkedin, label: "LinkedIn", href: "https://linkedin.com/in/yourusername", text: "linkedin.com/in/yourusername" },
+  { icon: Mail, label: "Email", href: "mailto:akshatneema39@gmail.com", text: "akshatneema39@gmail.com" },
+  { icon: Github, label: "GitHub", href: "https://github.com/Akshat270302", text: "github.com/Akshat270302" },
+  { icon: Linkedin, label: "LinkedIn", href: "https://www.linkedin.com/in/akshat-neema-0763552b5/", text: "linkedin.com/in/akshat-neema-0763552b5" },
 ];
 
 const ContactSection = () => {
