@@ -1,33 +1,58 @@
-import { Badge } from "@/components/ui/badge";
+import { useReveal } from "@/hooks/use-reveal";
 
-const skillCategories = [
-  { title: "Programming", skills: ["C", "C++", "Python", "Dart"] },
-  { title: "App Development", skills: ["Flutter"] },
-  { title: "Backend & Database", skills: ["MySQL", "MongoDB", "REST APIs"] },
-  { title: "AI / ML", skills: ["PyTorch", "Deep Learning", "Computer Vision"] },
-  { title: "Tools", skills: ["Git", "GitHub", "VS Code"] },
+const skillGroups = [
+  {
+    title: "Languages",
+    skills: ["C", "C++", "Python", "Dart"],
+  },
+  {
+    title: "Frameworks & App Dev",
+    skills: ["Flutter", "PyTorch", "REST APIs"],
+  },
+  {
+    title: "Databases",
+    skills: ["MySQL", "MongoDB"],
+  },
+  {
+    title: "AI / ML",
+    skills: ["Deep Learning", "Computer Vision", "Grad-CAM++"],
+  },
+  {
+    title: "Tools & Platforms",
+    skills: ["Git", "GitHub", "VS Code"],
+  },
 ];
 
 const SkillsSection = () => {
+  const ref = useReveal();
+
   return (
     <section id="skills" className="section-container">
-      <h2 className="section-title">Skills</h2>
-      <div className="h-1 w-16 bg-primary rounded-full mb-12" />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-        {skillCategories.map((cat) => (
-          <div key={cat.title} className="space-y-3">
-            <h3 className="font-semibold text-foreground font-mono text-sm tracking-wider">
-              {cat.title}
-            </h3>
-            <div className="flex flex-wrap gap-2">
-              {cat.skills.map((skill) => (
-                <Badge key={skill} variant="secondary" className="font-normal text-sm px-3 py-1">
-                  {skill}
-                </Badge>
-              ))}
+      <div ref={ref} className="reveal">
+        <span className="section-label">Skills</span>
+        <h2 className="section-heading mb-12">
+          My <span className="gradient-text">tech stack</span>
+        </h2>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {skillGroups.map((group) => (
+            <div key={group.title} className="card-premium p-6">
+              <h3 className="font-mono text-xs tracking-wider text-primary uppercase mb-4">
+                {group.title}
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {group.skills.map((skill) => (
+                  <span
+                    key={skill}
+                    className="px-3 py-1.5 text-sm rounded-md bg-background/60 text-foreground border border-border/50 transition-colors duration-200 hover:border-primary/40 hover:text-primary"
+                  >
+                    {skill}
+                  </span>
+                ))}
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );
