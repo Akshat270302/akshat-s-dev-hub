@@ -1,7 +1,7 @@
 import { ArrowDown, Download, Github, Linkedin } from "lucide-react";
 import { useTypingEffect } from "@/hooks/use-typing-effect";
 
-const roles = ["Software Developer", "AI Enthusiast", "Problem Solver"];
+const roles = ["Software Developer", "Backend & AI Enthusiast", "Building Scalable Systems"];
 
 const HeroSection = () => {
   const typed = useTypingEffect(roles, 90, 1800);
