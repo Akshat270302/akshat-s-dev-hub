@@ -33,7 +33,12 @@ const ProjectsSection = () => {
 
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project) => (
-            <div key={project.title} className="group card-premium p-6 flex flex-col gradient-border rounded-xl">
+            <div key={project.title} className="group card-premium p-6 flex flex-col gradient-border rounded-xl relative overflow-hidden">
+              {project.featured && (
+                <span className="absolute top-4 right-4 text-[10px] font-mono tracking-wider uppercase px-2.5 py-1 rounded-full bg-primary/15 text-primary border border-primary/25">
+                  ⭐ Featured
+                </span>
+              )}
               <h3 className="text-lg font-semibold text-foreground mb-3 group-hover:text-primary transition-colors duration-200">
                 {project.title}
               </h3>

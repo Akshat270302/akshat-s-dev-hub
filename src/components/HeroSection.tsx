@@ -21,7 +21,7 @@ const HeroSection = () => {
           Hello, I'm
         </p>
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-          <span className="gradient-text">Akshat Neema</span>
+          <span className="gradient-text animate-glow-pulse">Akshat Neema</span>
         </h1>
         <div className="h-8 mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "0.2s" }}>
           <span className="text-lg md:text-xl text-muted-foreground">

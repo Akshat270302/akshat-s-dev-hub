@@ -107,6 +107,7 @@ export default {
         "scale-in": "scale-in 0.2s ease-out",
         "typing-cursor": "typing-cursor 0.8s steps(1) infinite",
         "float": "float 6s ease-in-out infinite",
+        "glow-pulse": "glow-pulse 3s ease-in-out infinite",
       },
     },
   },
