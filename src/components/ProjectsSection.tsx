@@ -5,16 +5,18 @@ const projects = [
   {
     title: "Osteoporosis Detection using Deep Learning",
     description:
-      "Deep learning model using ResNet to detect osteoporosis from knee X-ray images with Grad-CAM++ for visual explanations.",
-    impact: "Improves diagnostic accuracy and model transparency in medical AI.",
+      "Built a ResNet-based model to detect osteoporosis from X-rays with Grad-CAM++ explainability, improving diagnostic transparency in medical AI.",
+    impact: "Improves diagnostic accuracy and model interpretability in healthcare.",
     tech: ["Python", "PyTorch", "ResNet", "Grad-CAM++"],
+    featured: false,
   },
   {
     title: "Salon Booking Mobile Application",
     description:
-      "Cross-platform salon booking app with real-time scheduling, nearby salon discovery, and structured database interactions.",
-    impact: "Improves booking efficiency and user experience.",
+      "Cross-platform salon booking app with real-time scheduling and nearby salon discovery. Designed scalable booking logic to handle concurrent user interactions.",
+    impact: "Improves booking efficiency and user experience at scale.",
     tech: ["Flutter", "Dart", "MySQL/MongoDB", "REST APIs"],
+    featured: true,
   },
 ];
 
@@ -31,7 +33,12 @@ const ProjectsSection = () => {
 
         <div className="grid md:grid-cols-2 gap-6">
           {projects.map((project) => (
-            <div key={project.title} className="group card-premium p-6 flex flex-col gradient-border rounded-xl">
+            <div key={project.title} className="group card-premium p-6 flex flex-col gradient-border rounded-xl relative overflow-hidden">
+              {project.featured && (
+                <span className="absolute top-4 right-4 text-[10px] font-mono tracking-wider uppercase px-2.5 py-1 rounded-full bg-primary/15 text-primary border border-primary/25">
+                  ⭐ Featured
+                </span>
+              )}
               <h3 className="text-lg font-semibold text-foreground mb-3 group-hover:text-primary transition-colors duration-200">
                 {project.title}
               </h3>

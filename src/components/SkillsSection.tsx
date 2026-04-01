@@ -6,6 +6,10 @@ const skillGroups = [
     skills: ["C", "C++", "Python", "Dart"],
   },
   {
+    title: "Core CS",
+    skills: ["Data Structures", "DBMS", "Operating Systems"],
+  },
+  {
     title: "Frameworks & App Dev",
     skills: ["Flutter", "PyTorch", "REST APIs"],
   },

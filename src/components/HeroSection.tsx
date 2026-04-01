@@ -1,7 +1,7 @@
 import { ArrowDown, Download, Github, Linkedin } from "lucide-react";
 import { useTypingEffect } from "@/hooks/use-typing-effect";
 
-const roles = ["Software Developer", "AI Enthusiast", "Problem Solver"];
+const roles = ["Software Developer", "Backend & AI Enthusiast", "Building Scalable Systems"];
 
 const HeroSection = () => {
   const typed = useTypingEffect(roles, 90, 1800);
@@ -21,7 +21,7 @@ const HeroSection = () => {
           Hello, I'm
         </p>
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-extrabold mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "0.1s" }}>
-          <span className="gradient-text">Akshat Neema</span>
+          <span className="gradient-text animate-glow-pulse">Akshat Neema</span>
         </h1>
         <div className="h-8 mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "0.2s" }}>
           <span className="text-lg md:text-xl text-muted-foreground">
@@ -31,6 +31,9 @@ const HeroSection = () => {
         </div>
         <p className="max-w-lg mx-auto text-muted-foreground leading-relaxed mb-10 opacity-0 animate-fade-in" style={{ animationDelay: "0.3s" }}>
           I build real-world applications and intelligent systems that solve practical problems.
+        </p>
+        <p className="text-sm font-medium text-primary/80 mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "0.35s" }}>
+          Focused on building production-ready systems and solving real-world problems.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
