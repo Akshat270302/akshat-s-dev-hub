@@ -5,16 +5,18 @@ const projects = [
   {
     title: "Osteoporosis Detection using Deep Learning",
     description:
-      "Deep learning model using ResNet to detect osteoporosis from knee X-ray images with Grad-CAM++ for visual explanations.",
-    impact: "Improves diagnostic accuracy and model transparency in medical AI.",
+      "Built a ResNet-based model to detect osteoporosis from X-rays with Grad-CAM++ explainability, improving diagnostic transparency in medical AI.",
+    impact: "Improves diagnostic accuracy and model interpretability in healthcare.",
     tech: ["Python", "PyTorch", "ResNet", "Grad-CAM++"],
+    featured: false,
   },
   {
     title: "Salon Booking Mobile Application",
     description:
-      "Cross-platform salon booking app with real-time scheduling, nearby salon discovery, and structured database interactions.",
-    impact: "Improves booking efficiency and user experience.",
+      "Cross-platform salon booking app with real-time scheduling and nearby salon discovery. Designed scalable booking logic to handle concurrent user interactions.",
+    impact: "Improves booking efficiency and user experience at scale.",
     tech: ["Flutter", "Dart", "MySQL/MongoDB", "REST APIs"],
+    featured: true,
   },
 ];
 
