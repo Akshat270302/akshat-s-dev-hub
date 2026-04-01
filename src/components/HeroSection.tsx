@@ -32,6 +32,9 @@ const HeroSection = () => {
         <p className="max-w-lg mx-auto text-muted-foreground leading-relaxed mb-10 opacity-0 animate-fade-in" style={{ animationDelay: "0.3s" }}>
           I build real-world applications and intelligent systems that solve practical problems.
         </p>
+        <p className="text-sm font-medium text-primary/80 mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "0.35s" }}>
+          Focused on building production-ready systems and solving real-world problems.
+        </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
           <a href="#projects" className="btn-gradient">
