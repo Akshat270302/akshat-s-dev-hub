@@ -48,6 +48,7 @@ const projects = [
     ],
     tech: ["Flutter", "Dart", "Firebase Authentication", "Cloud Firestore"],
     featured: false,
+    liveDemoUrl: "https://salon-booking-app-preview.vercel.app/",
   },
   {
     title: "AI-Based Osteoporosis Detection System",
