@@ -2,9 +2,9 @@ import { useReveal } from "@/hooks/use-reveal";
 import { Folder, Cpu, Layers } from "lucide-react";
 
 const stats = [
-  { icon: Folder, label: "Projects Built", value: "5+" },
-  { icon: Cpu, label: "Technologies", value: "12+" },
-  { icon: Layers, label: "Focus Areas", value: "AI · App Dev · Backend" },
+  { icon: Folder, label: "Current study", value: "B.Tech. in Computer Science & Engineering" },
+  { icon: Cpu, label: "Build focus", value: "Software development, backend systems, and applied AI" },
+  { icon: Layers, label: "Approach", value: "Understand the problem, then build useful products" },
 ];
 
 const AboutSection = () => {
@@ -21,17 +21,17 @@ const AboutSection = () => {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <div className="space-y-4">
             <p className="text-muted-foreground leading-relaxed">
-              I am a Computer Science student passionate about building{" "}
-              <span className="text-foreground font-medium">impactful software</span>. I enjoy working on
-              real-world applications and exploring{" "}
-              <span className="text-foreground font-medium">AI-based solutions</span>.
+              I am a Computer Science and Engineering student and software developer who enjoys building
+              practical applications and exploring{" "}
+              <span className="text-foreground font-medium">applied AI solutions</span>.
             </p>
             <p className="text-muted-foreground leading-relaxed">
-              I focus on understanding systems deeply rather than just building surface-level
-              projects. Currently, I am improving my skills in{" "}
+              I like understanding the problem behind a product, designing a clear solution, and turning
+              it into working software. My projects span{" "}
               <span className="text-foreground font-medium">
-                backend development, data structures, and system design
+                full-stack development, backend systems, and machine learning
               </span>.
+              {" "}with an emphasis on problem-solving and useful user experiences..
             </p>
           </div>
 

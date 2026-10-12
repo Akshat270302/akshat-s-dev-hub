@@ -1,7 +1,7 @@
 import { ArrowDown, Download, Github, Linkedin } from "lucide-react";
 import { useTypingEffect } from "@/hooks/use-typing-effect";
 
-const roles = ["Software Developer", "Backend & AI Enthusiast", "Building Scalable Systems"];
+const roles = ["Computer Science & Engineering Student", "Software Developer", "Backend & AI Builder"];
 
 const HeroSection = () => {
   const typed = useTypingEffect(roles, 90, 1800);
@@ -30,10 +30,10 @@ const HeroSection = () => {
           <span className="inline-block w-[2px] h-5 ml-1 align-middle border-r-2 border-primary animate-typing-cursor" />
         </div>
         <p className="max-w-lg mx-auto text-muted-foreground leading-relaxed mb-10 opacity-0 animate-fade-in" style={{ animationDelay: "0.3s" }}>
-          I build real-world applications and intelligent systems that solve practical problems.
+          I build practical software products and intelligent systems with a focus on useful, reliable experiences.
         </p>
         <p className="text-sm font-medium text-primary/80 mb-6 opacity-0 animate-fade-in" style={{ animationDelay: "0.35s" }}>
-          Focused on building production-ready systems and solving real-world problems.
+          Focused on software development, backend systems, and applied AI.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8 opacity-0 animate-fade-in" style={{ animationDelay: "0.4s" }}>
@@ -41,7 +41,7 @@ const HeroSection = () => {
             <ArrowDown className="h-4 w-4" />
             View Projects
           </a>
-          <a href="/Resume_Akshat_Neema.pdf" download="Resume_Akshat_Neema.pdf" className="btn-outline-glow">
+          <a href="/Resume.pdf" download="Resume.pdf" className="btn-outline-glow">
             <Download className="h-4 w-4" />
             Download Resume
           </a>

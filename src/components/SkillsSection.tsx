@@ -2,28 +2,32 @@ import { useReveal } from "@/hooks/use-reveal";
 
 const skillGroups = [
   {
-    title: "Languages",
-    skills: ["C", "C++", "Python", "Dart"],
+    title: "Programming Languages",
+    skills: ["JavaScript", "TypeScript", "Python", "C++", "Java", "Kotlin", "Dart", "C"],
   },
   {
-    title: "Core CS",
-    skills: ["Data Structures", "DBMS", "Operating Systems"],
+    title: "Frontend Development",
+    skills: ["React.js", "TypeScript", "JavaScript", "HTML", "CSS", "Flutter"],
   },
   {
-    title: "Frameworks & App Dev",
-    skills: ["Flutter", "PyTorch", "REST APIs"],
+    title: "Backend & APIs",
+    skills: ["Node.js", "Express.js", "Django", "REST APIs"],
   },
   {
     title: "Databases",
-    skills: ["MySQL", "MongoDB"],
+    skills: ["MySQL", "MongoDB", "Firebase Firestore", "PostgreSQL", "SQLite"],
   },
   {
-    title: "AI / ML",
-    skills: ["Deep Learning", "Computer Vision", "Grad-CAM++"],
+    title: "Machine Learning & Data",
+    skills: ["TensorFlow", "Keras", "PyTorch", "Generative AI", "LLM Integration", "Gemini API", "Google Vision API", "OCR", "Computer Vision"],
   },
   {
-    title: "Tools & Platforms",
-    skills: ["Git", "GitHub", "VS Code"],
+    title: "Developer Tools & Platforms",
+    skills: ["Git", "GitHub", "CI/CD", "AWS", "Google Cloud", "Docker", "VS Code", "Jupyter Notebook"],
+  },
+  {
+    title: "Core CS",
+    skills: ["Software Engineering", "Data Structures & Algorithms", "OOP", "DBMS", "System Design", "Operating Systems", "Computer Networks"],
   },
 ];
 

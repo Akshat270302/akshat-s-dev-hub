@@ -1,21 +1,21 @@
 import { useReveal } from "@/hooks/use-reveal";
-import { Target, BrainCircuit, Server } from "lucide-react";
+import { BriefcaseBusiness, GraduationCap, Code2 } from "lucide-react";
 
 const points = [
   {
-    icon: Target,
-    title: "Problem Solving",
-    text: "I approach every project by understanding the core problem first, then designing solutions that are practical and scalable.",
+    icon: BriefcaseBusiness,
+    title: "Fusion ERP | Open Source",
+    text: "Backend developer at PDPM IIITDM Jabalpur (Aug 2025 – May 2026). Built Python, Django, PostgreSQL, and REST API features for an institute-wide ERP serving 1,000+ students.",
   },
   {
-    icon: BrainCircuit,
-    title: "System Thinking",
-    text: "I focus on how components connect — from data flow to API design — rather than just building isolated features.",
+    icon: GraduationCap,
+    title: "B.Tech. Computer Science & Engineering",
+    text: "PDPM IIITDM Jabalpur, Madhya Pradesh. GPA: 8.2/10.0. Expected May 2027.",
   },
   {
-    icon: Server,
-    title: "Backend Understanding",
-    text: "I build with real databases, APIs, and deployment in mind — not just front-end prototypes.",
+    icon: Code2,
+    title: "Engineering practice",
+    text: "Experience includes automated tests for backend logic, pull requests, code reviews, issue resolution, and collaborative software development.",
   },
 ];
 
@@ -27,10 +27,10 @@ const ExperienceSection = () => {
       <div ref={ref} className="reveal">
         <span className="section-label">Experience</span>
         <h2 className="section-heading mb-4">
-          What I've <span className="gradient-text">learned</span>
+          Experience & <span className="gradient-text">education</span>
         </h2>
         <p className="text-lg font-semibold text-foreground mb-12">
-          I focus on building real-world systems, not just projects.
+          Building practical software while strengthening my computer science foundation.
         </p>
 
         <div className="grid sm:grid-cols-3 gap-6">

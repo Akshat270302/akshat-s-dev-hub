@@ -3,22 +3,80 @@ import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
-    title: "Osteoporosis Detection using Deep Learning",
+    title: "Coco — Audio-First Companion",
     description:
-      "Built a ResNet-based model to detect osteoporosis from X-rays with Grad-CAM++ explainability, improving diagnostic transparency in medical AI.",
-    impact: "Improves diagnostic accuracy and model interpretability in healthcare.",
-    tech: ["Python", "PyTorch", "ResNet", "Grad-CAM++"],
+      "An AI-powered, audio-first companion that processes visual information and communicates relevant information through spoken output.",
+    features: [
+      "Image acquisition and processing",
+      "OCR-based text extraction",
+      "Safety screening of extracted content",
+      "Language-model-assisted narration",
+      "Multilingual text-to-speech output",
+    ],
+    tech: ["Python", "Gemini API", "Google Vision API", "OCR", "OpenCV", "TinyLlama", "SHAP", "Raspberry Pi"],
+    featured: true,
+    githubUrl: "https://github.com/Akshat270302/Coco---Audio-First-Companion.git",
+  },
+  {
+    title: "Expense Tracker",
+    description:
+      "A full-stack expense tracking application for managing transactions and understanding spending patterns through a dashboard.",
+    features: [
+      "REST API-based transaction management",
+      "Dashboard and recent activity summaries",
+      "Search and category/date filtering",
+      "Filtered expense totals and visualizations",
+      "Input validation and error handling",
+      "Idempotency-key protection against duplicate API requests",
+    ],
+    tech: ["React 18", "TypeScript", "Vite", "Node.js", "Express.js", "SQLite"],
+    featured: false,
+    liveDemoUrl: "https://fenmo.vercel.app/",
+  },
+  {
+    title: "SalonBooking — Salon & Appointment Management System",
+    description:
+      "A cross-platform salon booking application that enables customers to discover salons, choose services and staff, and schedule appointments.",
+    features: [
+      "OTP-based authentication",
+      "Salon discovery and browsing",
+      "Service and staff selection",
+      "Appointment scheduling and booking management",
+      "Role-based customer and salon-owner access",
+      "Real-time booking updates through Cloud Firestore",
+      "Reviews, ratings, and customer–salon communication",
+    ],
+    tech: ["Flutter", "Dart", "Firebase Authentication", "Cloud Firestore"],
+    featured: false,
+  },
+  {
+    title: "AI-Based Osteoporosis Detection System",
+    description:
+      "A deep learning project that analyzes knee X-ray images for osteoporosis-related classification and uses explainable AI to visualize regions influencing model predictions.",
+    features: [
+      "Image preprocessing and model inference",
+      "ResNet-18 based image classification",
+      "Transfer learning",
+      "Grad-CAM++ visual explanations",
+    ],
+    tech: ["Python", "PyTorch", "ResNet-18", "Deep Learning", "Grad-CAM++"],
     featured: false,
     githubUrl: "https://github.com/Akshat270302/OsteoDetect.git",
   },
   {
-    title: "Salon Booking Mobile Application",
+    title: "Customer Churn Analysis",
     description:
-      "Cross-platform salon booking app with real-time scheduling and nearby salon discovery. Designed scalable booking logic to handle concurrent user interactions.",
-    impact: "Improves booking efficiency and user experience at scale.",
-    tech: ["Flutter", "Dart", "MySQL/MongoDB", "REST APIs"],
-    featured: true,
-    liveDemoUrl: "https://salon-booking-app-preview.vercel.app?_vercel_share=JHz3eUOsYLIqzwJY4cdlyDljn0MhGUO4",
+      "A machine-learning project that analyzes telecom customer behavior, predicts customer churn, and identifies factors that can inform retention strategies.",
+    features: [
+      "Data cleaning and exploratory data analysis",
+      "Analysis of tenure, contracts, billing, and payment methods",
+      "Class-balanced Random Forest classification",
+      "Evaluation using classification metrics and ROC-AUC",
+      "Feature importance analysis and business-oriented visualizations",
+    ],
+    tech: ["Python", "Pandas", "NumPy", "Scikit-learn", "Matplotlib", "Seaborn"],
+    featured: false,
+    githubUrl: "https://github.com/Akshat270302/Customer_Churn_Analysis",
   },
 ];
 
@@ -47,9 +105,11 @@ const ProjectsSection = () => {
               <p className="text-muted-foreground text-sm leading-relaxed mb-2 flex-1">
                 {project.description}
               </p>
-              <p className="text-xs text-primary/80 italic mb-4">
-                ↳ {project.impact}
-              </p>
+              <ul className="text-xs text-muted-foreground leading-relaxed list-disc list-inside space-y-1 mb-4">
+                {project.features.map((feature) => (
+                  <li key={feature}>{feature}</li>
+                ))}
+              </ul>
               <div className="flex flex-wrap gap-2 mb-5">
                 {project.tech.map((t) => (
                   <span key={t} className="text-xs font-mono px-2.5 py-1 rounded-md bg-primary/10 text-primary border border-primary/20">
